@@ -8,7 +8,7 @@
     "test:clean": "rimraf allure-report allure-results",
     "test:report-generate": "allure generate allure-results --clean -o allure-report",
     "test:report": "allure open allure-report -p 3002",
-    "test-login": "mocha login.js --no-timeouts",
+    "test-login": "mocha ./Testcases/registerCustomer --no-timeouts",
     "test:refresh-local": "npm run test:clean & npm run test-login & npm run test:report-generate & npm run test:report"
   },
   "author": "",
