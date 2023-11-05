@@ -9,8 +9,9 @@
     "test:report-generate": "allure generate allure-results --clean -o allure-report",
     "test:report": "allure open allure-report -p 3002",
     "test-login": "mocha ./Testcases/registerCustomer --no-timeouts",
-    "test:refresh-local": "npm run test:clean & npm run test-login & npm run test:report-generate & npm run test:report"
-  },
+    "test:run-specific-test": "mocha ./Testcases/registerCustomer --no-timeouts --grep 'TC_07_Reset_Button'",
+    "test:refresh-local": "npm run test:clean && npm run test-login && npm run test:report-generate && npm run test:report"
+  }, 
   "author": "",
   "license": "ISC",
   "dependencies": {

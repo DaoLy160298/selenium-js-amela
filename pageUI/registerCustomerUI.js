@@ -24,6 +24,7 @@ class registerCustomerUI{
     emailInput = By.xpath("//td[text()='E-mail']/following-sibling::td/input");
     passwordInput = By.xpath("//td[text()='Password']/following-sibling::td/input");
     submitButton = By.xpath("//input[@value='Submit']");
+    resetButton = By.xpath("//input[@value='Reset']");
     textSuccessMessage = By.css('.heading3');
 
     verifyCustomerNameText = By.xpath("//td[contains(text(),'Customer Name')]/following-sibling::td");
@@ -35,5 +36,17 @@ class registerCustomerUI{
     verifyPinText = By.xpath("//td[contains(text(),'Pin')]/following-sibling::td");
     verifyMobileText = By.xpath("//td[contains(text(),'Mobile No.')]/following-sibling::td");
     verifyEmailText = By.xpath("//td[contains(text(),'Email')]/following-sibling::td");
+
+    customerNameBlankMessage = By.xpath("//td[contains(text(),'Customer Name')]/following-sibling::td/label");
+    dateBlankMessage = By.xpath("//td[contains(text(),'Date of Birth')]/following-sibling::td/label");
+    addressBlankMessage = By.xpath("//td[contains(text(),'Address')]/following-sibling::td/label");
+    stateBlankMessage = By.xpath("//td[contains(text(),'State')]/following-sibling::td/label");
+    cityBlankMessage = By.xpath("//td[contains(text(),'City')]/following-sibling::td/label");
+    pinBlankMessage = By.xpath("//td[contains(text(),'PIN')]/following-sibling::td/label");
+    moblileBlankMessage = By.xpath("//td[contains(text(),'Mobile Number')]/following-sibling::td/label");
+    emailBlankMessage = By.xpath("//td[contains(text(),'E-mail')]/following-sibling::td/label");
+    passwordBlankMessage = By.xpath("//td[contains(text(),'Password')]/following-sibling::td/label");
+  
+
 }
 module.exports = new registerCustomerUI();
